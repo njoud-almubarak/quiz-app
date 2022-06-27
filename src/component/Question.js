@@ -19,7 +19,7 @@ const Question = ({ currQues, setCurrQues, questions,  options, correct, setScor
     if (i === correct) setScore(score + 1); };
 
   const Next = () => {
-    if (currQues > 8) {
+    if (currQues > 5) {
       navigate("/result");
     } else if (selected) {
       setCurrQues(currQues + 1);
